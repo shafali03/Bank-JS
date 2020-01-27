@@ -8,5 +8,4 @@ describe('Account', function() {
     account = new Account();
     expect(account.currentBalance()).toEqual(2)
   });
-  
 });
