@@ -1,7 +1,7 @@
 'use strict'
 
 function Account() {
-  this.balance = 2
+  this.balance = 0
 }
 
 Account.prototype.currentBalance = function(){

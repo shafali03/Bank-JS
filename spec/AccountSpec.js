@@ -4,8 +4,15 @@ describe('Account', function() {
 
   var account;
 
-  it('the current account balance is $2', function() {
+  it('current account balance is $0', function(){
     account = new Account();
-    expect(account.currentBalance()).toEqual(2)
+    expect(account.currentBalance()).toEqual(0)
   });
+
+  it('has a deposit of $10 has been added to the account', function(){
+    account = new Account();
+    account.deposit()
+    expect(account.currentBalance()).toEqual(10)
+  })
+
 });
