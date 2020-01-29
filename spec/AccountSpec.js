@@ -9,18 +9,18 @@ describe('Account', function() {
   })
 
 
-  it('current account balance is $10', function(){
-    expect(account.currentBalance()).toEqual(10)
+  it('current account balance is $0', function(){
+    expect(account.currentBalance()).toEqual(0)
   });
 
-  it('has a deposit of $5 added to the account', function(){
-    account.deposit()
-    expect(account.currentBalance()).toEqual(15)
+  it('has a deposit of $10 added to the account', function(){
+    account.deposit(10)
+    expect(account.currentBalance()).toEqual(10)
   })
 
   it('can withdraw $5 from account', function() {
-    account.withdraw()
-    expect(account.currentBalance()).toEqual(5)
+    account.withdraw(5)
+    expect(account.currentBalance()).toEqual(-5)
   })
 
 });
