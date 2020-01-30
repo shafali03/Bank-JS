@@ -5,5 +5,6 @@ class Transaction {
       this.credit = 0;
       this.debit = 0;
       this.balance = balance;
+      type === 'debit' ? this.debit = amount : this.credit = amount
   }
 }

@@ -8,7 +8,7 @@ describe('Transaction', function() {
     transaction = new Transaction('credit', 10);
   })
 
-  it('has credit', function() {
+  it('has credit of $20', function() {
     expect.transaction.credit().toEqual(10)
   })
 })
