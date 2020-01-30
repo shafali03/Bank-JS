@@ -27,6 +27,5 @@ describe('Account', function() {
     expect(account.transaction).toEqual([])
   })
 
-  
 
 });
