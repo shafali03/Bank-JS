@@ -9,6 +9,6 @@ describe('Transaction', function() {
   })
 
   it('has credit', function() {
-    expect.transaction.credit()
+    expect.transaction.credit().toEqual(10)
   })
 })
