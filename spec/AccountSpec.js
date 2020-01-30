@@ -27,5 +27,9 @@ describe('Account', function() {
     expect(account.transaction).toEqual([])
   })
 
+  it('can deposit stored in the array', function() {
+    account.deposit(5)
+    expect(account.transaction.length).toEqual([1])
+  })
 
 });
