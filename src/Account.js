@@ -11,15 +11,10 @@ Account.prototype.currentBalance = function(){
 
 Account.prototype.deposit = function(amount){
   this.balance += amount
-  // this.transaction.push(new transaction('credit', amount, this.balance ))
-  
+  return this.balance
 }
 
 Account.prototype.withdraw = function(amount) {
   this.balance -= amount
   return this.balance
 }
-
-// Account.prototype.trans = function(){
-//   this.transaction.push +='credit', amount
-// }
