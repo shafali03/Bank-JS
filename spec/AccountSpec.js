@@ -23,4 +23,10 @@ describe('Account', function() {
     expect(account.currentBalance()).toEqual(-5)
   })
 
+  it('each account has an empty array', function() {
+    expect(account.transaction).toEqual([])
+  })
+
+  
+
 });

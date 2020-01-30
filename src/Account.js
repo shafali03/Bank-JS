@@ -2,6 +2,7 @@
 
 function Account() {
   this.balance = 0
+  this.transaction = []
 }
 
 Account.prototype.currentBalance = function(){
@@ -17,3 +18,4 @@ Account.prototype.withdraw = function(amount) {
   this.balance -= amount
   return this.balance
 }
+
